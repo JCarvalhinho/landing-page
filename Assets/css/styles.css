@@ -1,76 +1,30 @@
-:root {
-    --primary-color: #240024;
-    --white: #FFFF;
-    --gap: 3rm;
+.intro-content {
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: var(--gap);
+    height: 100vh;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 
-html {
-    font: 62.5%;
+.intro-img img {
+    max-width: 100%;
+    height: auto;
 }
 
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
-
-body {
-    font-family:'Open Sans', sans-serif;
-    font-size: 1.6rem;
-    color: var(--primary-color)
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Montserrat', sans-serif;
-}
-
-h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 5.5rem;
-}
-
-h3 {
-    font-size: 5rem;
-}
-
-h4 {
-    font-size: 4.5rem;
-}
-
-h5 {
-    font-size: 4rem;
-}
-
-h6 {
-    font-size: 3.5rem;
-}
-
-.main-bg {
-    background-image: url('../img/endless-back.png');
-    background-size: cover;
-    background-position: center center;
-    color: var(--white);
-}
-
-.white-bg {
-    background: var(--white);
-}
-
-.main-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: var(--gap);
-}
-
-.section {
-    min-height: 100vh;
+.top3-content {
+    max-width: 64rem;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
 }
