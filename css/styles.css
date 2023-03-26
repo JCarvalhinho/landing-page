@@ -37,7 +37,7 @@
 
 .grid-one-content {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-flow: column wrap;
     justify-content: center;
 }
